@@ -8,7 +8,20 @@ const router = createBrowserRouter([
   {
     element: <App />,
     path: '/',
-    children: [{ element: <NotesList />, path: '/notes/:folderId' }],
+    loader: () => {
+      return fetch('http://localhost:3000/folders');
+    },
+    children: [
+      {
+        element: <NotesList />,
+        path: '/notes/:folderId',
+        loader: ({ params }) => {
+          return fetch(
+            `http://localhost:3000/notes?folderId=${params.folderId}`
+          );
+        },
+      },
+    ],
   },
 ]);
 

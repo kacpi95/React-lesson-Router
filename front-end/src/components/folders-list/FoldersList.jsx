@@ -41,7 +41,9 @@ const FoldersList = () => {
             <Title>Foldery</Title>
             <UserCreatedFolders>
                 {folders.map((folder, idx) => (
-                    <Folder key={idx}>{folder.name}</Folder>
+                    <a key={folder.id} href={`/notes/${folder.id}`}>
+                        <Folder>{folder.name}</Folder>
+                    </a>
                 ))}
             </UserCreatedFolders>
             {/* <Folder icon="archive">Archiwum</Folder> */}

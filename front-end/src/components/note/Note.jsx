@@ -1,7 +1,7 @@
 import RemoveIcon from '../../assets/remove.svg';
 import styles from './Note.module.css';
 import { TopBar } from '../top-bar/TopBar';
-import { useLoaderData, Form } from 'react-router-dom';
+import { useLoaderData, Form, useSubmit } from 'react-router-dom';
 
 const NoteEditor = ({ children }) => (
   <div className={styles['note-editor']}>{children}</div>
@@ -25,6 +25,7 @@ export async function updateNote({ request, params }) {
 
 const Note = () => {
   const note = useLoaderData();
+  const submit = useSubmit();
   return (
     <div className={styles.container}>
       <TopBar>
@@ -34,8 +35,8 @@ const Note = () => {
       </TopBar>
       <Form
         method='PATCH'
-        onChange={() => {
-          console.log('Zmiana formularza');
+        onChange={(event) => {
+          submit(event.currentTarget);
         }}
       >
         <NoteEditor key={note.id}>

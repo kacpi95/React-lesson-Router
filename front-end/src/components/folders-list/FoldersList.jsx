@@ -23,7 +23,7 @@ export async function createFolder(args) {
       name: folderName,
     }),
     headers: {
-      'Content-Type': 'applicaiton/json',
+      'Content-Type': 'application/json',
     },
   });
 }

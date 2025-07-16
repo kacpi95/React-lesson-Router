@@ -39,6 +39,10 @@
     },
     {
       "id": 12
+    },
+    {
+      "name": "Nowy folder",
+      "id": 13
     }
   ],
   "archive": [],
@@ -72,6 +76,18 @@
       "body": "\n1. Napisać odcinki\n2. Nargrać odcinki",
       "folderId": 1,
       "id": 15
+    },
+    {
+      "title": "nowa notatka",
+      "body": "treść notatki",
+      "folderId": 1,
+      "id": 16
+    },
+    {
+      "title": "nowa notatka",
+      "body": "treść notatki",
+      "folderId": 13,
+      "id": 17
     }
   ]
 }

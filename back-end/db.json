@@ -9,40 +9,12 @@
       "id": 2
     },
     {
+      "name": "Nowy folder",
       "id": 3
     },
     {
+      "name": "Nowy folder2",
       "id": 4
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
-    },
-    {
-      "name": "sdf",
-      "id": 10
-    },
-    {
-      "name": "sdf",
-      "id": 11
-    },
-    {
-      "id": 12
-    },
-    {
-      "name": "Nowy folder",
-      "id": 13
     }
   ],
   "archive": [],
@@ -76,36 +48,6 @@
       "body": "\n1. Napisać odcinki\n2. Nargrać odcinki",
       "folderId": 1,
       "id": 15
-    },
-    {
-      "title": "nowa notatka",
-      "body": "treść notatki",
-      "folderId": 1,
-      "id": 16
-    },
-    {
-      "title": "",
-      "body": "treść notatki",
-      "folderId": 13,
-      "id": 17
-    },
-    {
-      "title": "nowa nottka",
-      "body": "treść notatki",
-      "folderId": 13,
-      "id": 18
-    },
-    {
-      "title": "nowa notatka",
-      "body": "",
-      "folderId": 13,
-      "id": 19
-    },
-    {
-      "title": "nowa notatka",
-      "body": "asdasdass",
-      "folderId": 13,
-      "id": 20
     }
   ]
 }

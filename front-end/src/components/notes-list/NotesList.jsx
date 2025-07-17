@@ -4,7 +4,13 @@ import { AddNewButton } from '../add-new-button/AddNewButton';
 import { TopBar } from '../top-bar/TopBar';
 import { ShortNote } from '../short-note/ShortNote';
 import { Note } from '../note/Note';
-import { useLoaderData, NavLink, Outlet, Form } from 'react-router-dom';
+import {
+  useLoaderData,
+  NavLink,
+  Outlet,
+  Form,
+  redirect,
+} from 'react-router-dom';
 
 const NotesContainer = ({ children }) => (
   <div className={styles['notes-container']}>{children}</div>

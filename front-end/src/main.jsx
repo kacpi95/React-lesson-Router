@@ -41,6 +41,13 @@ const router = createBrowserRouter([
             loader: ({ params }) => {
               return fetch(`http://localhost:3000/notes/${params.noteId}`);
             },
+            shouldRevalidate: ({ formAction }) => {
+              if (formAction) {
+                return false;
+              } else {
+                return true;
+              }
+            },
           },
         ],
       },

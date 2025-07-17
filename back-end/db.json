@@ -94,6 +94,18 @@
       "body": "treść notatki",
       "folderId": 13,
       "id": 18
+    },
+    {
+      "title": "nowa notatka",
+      "body": "",
+      "folderId": 13,
+      "id": 19
+    },
+    {
+      "title": "nowa notatka",
+      "body": "asdasdas",
+      "folderId": 13,
+      "id": 20
     }
   ]
 }

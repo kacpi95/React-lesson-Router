@@ -16,6 +16,13 @@ const router = createBrowserRouter([
     loader: () => {
       return fetch('http://localhost:3000/folders');
     },
+    shouldRevalidate: ({ formAction }) => {
+      if (formAction === '/') {
+        return true;
+      } else {
+        return false;
+      }
+    },
     children: [
       {
         element: <NotesList />,

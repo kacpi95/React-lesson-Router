@@ -34,7 +34,9 @@ export async function createNote({ params }) {
       folderId: Number(params.folderId),
     }),
   })
-    .then((res) => res.json())
+    .then((res) => {
+      return res.json();
+    })
     .then((newNote) => {
       return redirect(`/notes/${newNote.folderId}/note/${newNote.id}`);
     });

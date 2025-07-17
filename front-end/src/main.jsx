@@ -7,6 +7,7 @@ import { Note } from './components/note/Note';
 import { createFolder } from './components/folders-list/FoldersList';
 import { createNote } from './components/notes-list/NotesList';
 import { updateNote } from './components/note/Note';
+import { deleteNote } from './components/note/Note';
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,12 @@ const router = createBrowserRouter([
                 return true;
               }
             },
+            children: [
+              {
+                path: 'delete',
+                action: deleteNote,
+              },
+            ],
           },
         ],
       },

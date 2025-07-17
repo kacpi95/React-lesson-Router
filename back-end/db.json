@@ -48,6 +48,12 @@
       "body": "\n1. Napisać odcinki\n2. Nargrać odcinki",
       "folderId": 1,
       "id": 15
+    },
+    {
+      "title": "nowa notatka",
+      "body": "treść notatki",
+      "folderId": 2,
+      "id": 16
     }
   ]
 }

@@ -33,7 +33,11 @@ export async function createNote({ params }) {
       body: 'treść notatki',
       folderId: Number(params.folderId),
     }),
-  });
+  })
+    .then((res) => res.json())
+    .then((newNote) => {
+      return redirect(`/notes/${newNote.folderId}/note/${newNote.id}`);
+    });
 }
 
 const NotesList = () => {
